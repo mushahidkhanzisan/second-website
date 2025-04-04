@@ -1,6 +1,142 @@
-h2{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #1A1244;
+    border-bottom: 4px solid rgb(142, 67, 212);
+    
+    
+}
+.nav_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  
+    
+}
+.nav_container > ul {
+    display: flex;
+    align-items: center;
+   
+}
+.nav_container > ul > li{
+    list-style: none;
+    
+}
+
+.nav_container> ul> li> a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 13px 20px ;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.nav_container> ul> li> a:hover{
+    background-color: black;
     color: red;
 }
-p{
-    font-size: 30px;
+.Navlogo h3{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    padding: 20px ;
+    
+
+}
+
+/* hero aria code started */
+header{
+    background-image: url(images/website\ banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0px;
+}
+.searchBoxIconParant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.searchBoxIconParant > i{
+    color: red;
+    background-color: green;
+    font-size: 25px;
+    width: 50px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.searchBoxIconParant > input{
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* main section code here */
+#main_section{
+    background-color: #2D236A;
+}
+#main_section_container{
+    width: 1200px;
+    margin: auto;
+}
+
+.latestVideoParent{
+    display: flex;
+    justify-content: space-between;
+    color: #04AA6D;
+    padding: 50px 0px 25px 0px;
+}
+.latestVideoChild > h3{
+    font-size: 25px;
+}
+.latestVideoChild > h4{
+    font-size: 20px;
+}
+
+.latestVideoChild span{
+    padding: 5px ;
+    background-color: rgba(235, 233, 233, 0.966);
+    border: 1px solid rgb(172, 169, 169);
+    color: black;
+    border-radius: 5px;
+}
+#single-items-parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    grid-row-gap: 50px;
+    grid-column-gap: 25px;
+}
+
+.single-item{
+    height: 250px;
+    border: 3px solid gray;
+}
+.single-item img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.single-item:hover img{
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+.single-item div{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    margin-top: 8px;
 }
