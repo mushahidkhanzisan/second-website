@@ -6,6 +6,8 @@
 nav{
     background-color: #1A1244;
     border-bottom: 4px solid rgb(142, 67, 212);
+    position: sticky;
+    top: 0;
     
     
 }
@@ -87,7 +89,7 @@ header{
     background-color: #2D236A;
 }
 #main_section_container{
-    width: 1200px;
+    width: 80%;
     margin: auto;
 }
 
@@ -139,4 +141,78 @@ header{
     justify-content: space-between;
     color: gray;
     margin-top: 8px;
+}
+#previousButton{
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#previousButton h3{
+    background-color: green;
+    border-radius: 5px;
+    transition: 0.5s;
+    
+}
+#previousButton h3 a{
+    color: white;
+    text-decoration: none;
+    padding: 6px 18px;
+    display: inline-block;
+    
+}
+#previousButton h3:hover{
+    background-color: rgb(3, 56, 3);
+}
+#previousButton div a{
+   
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 6px 8px;
+    border-radius: 5px;
+    margin: 0px 3px;
+}
+#previousButton div a:first-child{
+    background-color: green;
+    color: white;
+}
+
+/* footer section code  here */
+footer{
+    background-color: #850B79;
+    padding: 50px 0px;
+}
+#footer_container{
+    width: 70%;
+    margin: auto;
+
+}
+.footer_parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+}
+.footerFirstItem > h3, .footerSecondItem > h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.footerFirstItem > p{
+    margin: 15px 0px 20px 0px;
+}
+.footerSecondItem > p a{
+    color: white;
+    text-decoration: none;
+    line-height: 0.8cm;
+}
+.footerthirditem a{
+    color:white;
+    font-size: 35px;
+    padding: 5px;
+}
+.footerthirditem p{
+    line-height: 0.8cm;
+}
+.footerthirditem p:last-child{
+    margin-top: 20px;
 }

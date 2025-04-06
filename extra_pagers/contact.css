@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #1A1244;
+    border-bottom: 4px solid rgb(142, 67, 212);
+    position: sticky;
+    top: 0;
+    
+    
+}
+.nav_container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  
+    
+}
+.nav_container > ul {
+    display: flex;
+    align-items: center;
+   
+}
+.nav_container > ul > li{
+    list-style: none;
+    
+}
+
+.nav_container> ul> li> a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 13px 20px ;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.nav_container> ul> li> a:hover{
+    background-color: black;
+    color: red;
+}
+.Navlogo h3{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    padding: 20px ;
+    
+
+}
+
+
+#contact_container{
+    width: 800PX;
+    height: 590px;
+    margin: 50px auto;
+    box-shadow: 10px 10px 10px 10px gray;
+    background-color: #ffc0c0;
+}
+#contact_container > h3{
+    text-align: center;
+    font-size: 30px;
+}
+form input{
+   display: block; 
+   width: 400px;
+   margin: 20px auto;
+   border: none;
+   padding: 8px 15px;
+   border-radius: 30px;
+
+   
+}
+form textarea{
+    width: 400px;
+    height: 200px;
+    margin: 30px auto;
+    display: block;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 20px 0px 0px 20px;
+}
+form button {
+    width: 400px; 
+    display: block;
+    margin: auto;
+    padding: 15px 0px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(to right, blue, rgb(190, 77, 190), aqua);
+    font-size: 20px;
+    cursor: pointer;
+}
